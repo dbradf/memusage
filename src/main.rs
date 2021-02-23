@@ -70,6 +70,6 @@ fn main() {
     }
 
     println!("");
-    println!("Mean: {} std-dev: {}", mean, stddev);
-    println!("Total Memory Used: {}", memory_sizes.into_iter().map(|i| *i).sum::<i64>());
+    println!("Mean: {} MB std-dev: {}", mean, stddev);
+    println!("Total Memory Used: {} MB", memory_sizes.into_iter().map(|i| *i).sum::<i64>());
 }
